@@ -1,0 +1,7 @@
+streamlit
+mlxtend
+numpy
+pandas
+seaborn
+joblib
+plotly
