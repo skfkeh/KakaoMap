@@ -1,14 +1,6 @@
 # kakaomap.py
 import streamlit as st
 
-st.title('Kakao Map 맛집 탐방')
-st.subheader('카카오맵에서 OO 식당으로 검색된 결과를 바탕으로')
-st.subheader('특정 별점 이상의 식당 리스트를 뽑아 지도상에 Marking 하고')
-st.subheader('특정지역에 대한 밀집도를 분석해보는 프로젝트이다.')
-
-
-
-
 # 크롤링 작업을 위한 라이브러리 임포트
 from bs4 import BeautifulSoup as bs
 from selenium import webdriver
@@ -18,6 +10,18 @@ import json
 import time   # 코드 진행 지연을 위한 time 임포트
 from selenium.webdriver.common.by import By   # 2022년 7월 이후 selenium 업데이트로 인한 xpath 추적 임포트
 from selenium.webdriver.common.keys import Keys
+
+
+
+st.title('Kakao Map 맛집 탐방')
+st.subheader('카카오맵에서 OO 식당으로 검색된 결과를 바탕으로')
+st.subheader('특정 별점 이상의 식당 리스트를 뽑아 지도상에 Marking 하고')
+st.subheader('특정지역에 대한 밀집도를 분석해보는 프로젝트이다.')
+
+
+
+
+
 
 ##### 카카오 주소를 좌표(위도, 경도)로 변환 api
 ## 개인 api key를 할당 받아 적용
